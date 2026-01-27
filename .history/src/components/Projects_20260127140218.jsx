@@ -2,12 +2,10 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { projects } from "../data/projects";
 import { fadeUp, stagger } from "../styles/animations";
-import ProjectModal from "./ProjectModal";
 
 const Projects = () => {
   const [preview, setPreview] = useState(null);
   const [pos, setPos] = useState({ x: 0, y: 0 });
-  const [activeProject, setActiveProject] = useState(null);
 
   const handleMove = (e) => {
     setPos({
@@ -27,13 +25,13 @@ const Projects = () => {
           alt="preview"
           className="fixed z-50 w-72 rounded-xl shadow-2xl pointer-events-none"
           style={{ top: pos.y, left: pos.x }}
-          initial={{ opacity: 0, scale: 0.85, rotate: -6 }}
+          initial={{ opacity: 0, scale: 0.8, rotate: -6 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
+          exit={{ opacity: 0 }}
           transition={{ type: "spring", stiffness: 200 }}
         />
       )}
 
-      {/* PROJECT GRID */}
       <motion.div
         variants={stagger}
         initial="hidden"
@@ -47,7 +45,6 @@ const Projects = () => {
             onMouseEnter={() => setPreview(p.image)}
             onMouseLeave={() => setPreview(null)}
             onMouseMove={handleMove}
-            onClick={() => setActiveProject(p)}
             className="bg-white rounded-2xl shadow p-6 cursor-pointer hover:-translate-y-2 transition-transform"
           >
             <h3 className="font-semibold text-lg">{p.title}</h3>
@@ -66,12 +63,6 @@ const Projects = () => {
           </motion.div>
         ))}
       </motion.div>
-
-      {/* MODAL */}
-      <ProjectModal
-        project={activeProject}
-        onClose={() => setActiveProject(null)}
-      />
     </section>
   );
 };

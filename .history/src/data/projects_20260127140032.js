@@ -17,14 +17,14 @@ export const projects = [
     tech: ["React", "Cloudinary", "Stripe"],
     image: imagify,
     live: "https://picto-text-front.onrender.com/",
-    github: "https://github.com/arpit-925/Imagify",
+    github: "#",
   },
   {
     title: "Wanderlust",
     desc: "Travel listing platform with Mapbox, reviews & authorization.",
     tech: ["Node", "Express", "MongoDB"],
     image: wanderlust,
-    live: "https://stayhub-on26.onrender.com/",
-    github: "https://github.com/arpit-925/Wanderlust",
+    live: "#",
+    github: "#",
   },
 ];
