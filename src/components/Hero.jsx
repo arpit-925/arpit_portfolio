@@ -21,7 +21,7 @@ const Hero = () => {
             View Projects
           </a>
           <a
-            href="/resume.pdf"
+            href="https://drive.google.com/file/d/1agWFcp3-mfSNUDN30sHXfDk6Urf44bqF/view?usp=drivesdk&usp=embed_facebook"
             className="px-6 py-3 border rounded-lg"
           >
             Resume
