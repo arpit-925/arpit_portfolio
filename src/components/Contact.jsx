@@ -18,7 +18,7 @@ const socials = [
   {
     name: "Instagram",
     icon: FaInstagram,
-    link: "https://instagram.com/your_instagram_username",
+    link: "https://www.instagram.com/i_m_arpitmishra925/",
     color: "hover:text-pink-500",
   },
 ];
