@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeUp } from "../styles/animations";
-const profile = "/profile.jpeg";
+const profile = "/profile.jpg";
 
 // or move to public & use /profile.jpeg
 
