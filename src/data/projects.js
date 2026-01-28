@@ -2,6 +2,7 @@ import buddyfinder from "../assets/projects/buddyfinder.png";
 import imagify from "../assets/projects/imagify.png";
 import wanderlust from "../assets/projects/wanderlust.png";
 
+
 export const projects = [
   {
     title: "Buddy Finder",
