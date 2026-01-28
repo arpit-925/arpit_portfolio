@@ -7,14 +7,14 @@ import Contact from "./components/Contact";
 
 const App = () => {
   return (
-    <>
+    <div className="min-h-screen bg-transparent">
       <Navbar />
       <Hero />
       <About />
       <Skills />
       <Projects />
       <Contact />
-    </>
+    </div>
   );
 };
 
