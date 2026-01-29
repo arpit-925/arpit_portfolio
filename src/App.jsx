@@ -1,4 +1,4 @@
-import { i } from "framer-motion/client";
+
 import SocialBar from "./components/SocialBar";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
